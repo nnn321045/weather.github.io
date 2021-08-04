@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天氣查詢</title>
+    <link rel="stylesheet" href="./css/weather.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="app">
+        <!-- city -->
+        <select id="city" name="city">
+            <!-- <option value=""></option> -->
+        </select>
+
+        <!-- weather -->
+        <div id="weather">
+            <!-- js -->
+        </div>
+
+        <!-- Loading -->
+        <div class="loading">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.4/polyfill.min.js'></script>
+    <script src="./lib/BindValue.js"></script>
+    <script src="./JS/index.js"></script>
+
+</body>
+
+</html>

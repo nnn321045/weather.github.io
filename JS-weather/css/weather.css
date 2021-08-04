@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Microsoft JhengHei", "Heiti TC", "sans-serif";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.55)), url("../images/bg3.jpg");
+    background-position: 50% 0%;
+}
+
+#app {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.55)), url("../images/bg3.jpg");
+}
+
+select {
+    width: 40%;
+    height: 50px;
+    background-color: #fff;
+}
+
+#city {
+    color: #000;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+#logo {
+    position: fixed;
+    width: 37%;
+    top: 37%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#weather {
+    width: 100%;
+}
+
+#weather>h1 {
+    color: snow;
+    text-align: center;
+    font-size: 3em;
+}
+
+#weather>h1>i {
+    color: rgb(255, 255, 79);
+}
+
+#weather>h3 {
+    color: snow;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#weather>h3>i {
+    color: rgb(19, 160, 255);
+    text-align: center;
+    font-size: 1em;
+}
+
+#weather>h5 {
+    color: snow;
+    text-align: center;
+    font-size: 1em;
+}
+
+#weather>h5>i {
+    color: yellow;
+    text-align: center;
+    font-size: 1em;
+}
+
+#weather>p {
+    color: #fdfbfb;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 900;
+    letter-spacing: 3;
+    font-size: 16px;
+}
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 399;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: 27px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 6px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 6px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 26px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 45px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(19px, 0);
+    }
+}
+
+@media screen and (max-width:768px) {
+    #app {
+        width: 100%;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    select {
+        margin-top: 130px;
+        width: 50%;
+        height: 50px;
+        background-color: #fff;
+    }
+}
