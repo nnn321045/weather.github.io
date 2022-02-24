@@ -2,7 +2,7 @@ const cityEl = document.querySelector('#city');
 const loadingPag = document.querySelector('.loading');
 const showWeather = document.querySelector('#weather');
 const baseUrl = "https://run.mocky.io/v3/22722d11-fbb6-4159-b4c3-a8f169fbaa86";
-const baseUrl2 = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-5C9C8180-5919-4674-8D3D-E5AA2AEE5A2C&format=JSON";
+const baseUrl2 = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-79869446-9FB6-43A3-ADD8-3F6A03954730";
 let city = [];
 let weather = [];
 let html = "";
